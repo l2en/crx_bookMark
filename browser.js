@@ -34,11 +34,10 @@ function main() {
 	body.appendChild(markDOM);
 
 	markDOM.addEventListener('click', function () {
-		if (markNoticeDOM.className.indexOf('__Bk_success_AnimationBounceRight') > -1) {
+		markNoticeDOM.className = "__Bk_success __Bk_success_AnimationBounceRight";
+		setTimeout(function(){
 			markNoticeDOM.className = "__Bk_success __Bk_success_AnimationBounceLeft";
-		} else {
-			markNoticeDOM.className = "__Bk_success __Bk_success_AnimationBounceRight";
-		}
+		},1500)
 	});
 }
 
