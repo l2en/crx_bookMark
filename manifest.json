@@ -1,6 +1,6 @@
 {
 	"name": "BookMark",
-	"version": "0.0.1",
+	"version": null,
 	"manifest_version": 2,
 	"description": "Chrome Extension. BookMark for every page",
 	"browser_action": {
