@@ -1,6 +1,6 @@
 {
 	"name": "BookMark",
-	"version": "1.0",
+	"version": "0.0.1",
 	"manifest_version": 2,
 	"description": "Chrome Extension. BookMark for every page",
 	"browser_action": {
@@ -13,8 +13,12 @@
 	],
 	"content_scripts": [
 		{
-			"matches": ["<all_urls>"],
-			"css":["browser.css"],
+			"matches": [
+				"<all_urls>"
+			],
+			"css": [
+				"browser.css"
+			],
 			"js": [
 				"browser.js"
 			]
@@ -22,13 +26,15 @@
 	],
 	"homepage_url": "http://luol.in",
 	"background": {
-    "scripts": ["browser.js"],
-    "persistent": false
+		"scripts": [
+			"browser.js"
+		],
+		"persistent": false
 	},
 	"permissions": [
-    "<all_urls>",
-    "tabs",
-    "storage",
-    "unlimitedStorage"
-  ]
+		"<all_urls>",
+		"tabs",
+		"storage",
+		"unlimitedStorage"
+	]
 }
